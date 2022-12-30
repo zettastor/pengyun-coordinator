@@ -1,0 +1,12 @@
+1, mvn command will generate GetMicrosecondTimestamp.class
+2, cd **/target/classes
+3, javah py.coordinator.utils.GetMicrosecondTimestamp
+4, cp method content of py_coordinator_utils_GetMicrosecondTimestamp.h to GetMicrosecondTimestampCLanguage.c
+5, gcc -fPIC -D_REENTRANT -I /usr/local/java/jdk1.8.0_65/include/ -I /usr/local/java/jdk1.8.0_65/include/linux -c GetMicrosecondTimestamp.c
+6, gcc -shared GetMicrosecondTimestamp.o -o liblinux-get-microsecond-timestamp.so
+7, run with -Djava.library.path=
+
+
+
+
+

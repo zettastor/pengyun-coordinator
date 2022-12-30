@@ -1,0 +1,13 @@
+.classpath
+.project
+.settings
+target
+*.log
+*.log.*
+config_info
+bin/
+test-output/*
+manifest.mf
+*.iml
+.flattened-pom.xml
+.attach_pid*
